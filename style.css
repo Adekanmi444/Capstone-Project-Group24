@@ -237,6 +237,121 @@ padding is optional but i do this because of lists*/
   }
 }
 
+/* Group 4 Dev-Shades and Divine-Dev351 */
+
+.planetary-data {
+  padding: 40px 5%;
+  background: white;
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  overflow-x: auto;
+}
+
+.planetary-data table {
+  width: 100%;
+  min-width: 700px;
+  max-width: 1100px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: whitesmoke;
+  overflow: hidden;
+}
+
+#data-title {
+  color: #1a3a6b;
+  text-align: justify;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+caption {
+  text-align: justify;
+  font-size: 13px;
+  margin: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+thead tr th {
+  background-color: #1a3a6b;
+  color: #ffffff;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+}
+
+tbody th {
+  background-color: #d6e4f7;
+  color: #252525;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  vertical-align: middle;
+}
+
+/* DATA CELLS */
+tbody td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1.5px solid #ffffff;
+  color: #333;
+  background-color: #f5f9ff;
+  font-family: "Arial", sans-serif;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #f5f9ff;
+}
+
+/* RESPONSIVE TABLE TEXT */
+
+@media (max-width: 768px) {
+  .planetary-data {
+    display: none;
+  }
+}
+/* Desktop */
+.planetary-data table {
+  font-size: 1rem;
+}
+
+.planetary-data th,
+.planetary-data td {
+  padding: 12px;
+  text-align: center;
+}
+
+thead th,
+tbody th,
+tbody td {
+  word-break: break-word;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .planetary-data th,
+  .planetary-data td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #data-title {
+    font-size: 1.3rem;
+  }
+
+  .planetary-data caption {
+    font-size: 0.85rem;
+  }
+}
+
 /* Group 5 bamidelethecreator, leezorae and gbolee002-ux */
 
 /*CONTACT FORM */
