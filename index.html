@@ -1,0 +1,304 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Group 24 capstone</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img
+        src="data:image/png;base64,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"
+        alt="Company Logo"
+        width="200"
+        height="100" />
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- HERO / INTRO SECTION -->
+      <section class="hero" aria-labelledby="hero-title">
+        <h1>
+          Explore Our Solar System<br />
+          Through Data
+        </h1>
+        <p>
+          Understand the planets not just by name, but by measurable
+          <br />facts. From size and mass to gravity and density, this page<br />
+          breaks down the solar-system in a clear, data-driven way.
+        </p>
+
+        <nav>
+          <a href="#data-title">Explore the Data</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </section>
+
+
+      <!-- VIDEO -->
+      <section class="video-section">
+        <!-- Right column: text -->
+        <div class="video-text">
+          <h2>How Planetary Data<br />Helps Us Understand<br />Space</h2>
+          <p>
+            Planetary science goes beyond images. Comparing
+            <span>mass, diameter, gravity</span>, and <span>density</span>, we
+            gain insight into how planets form, behave, and interact within the
+            solar system.
+          </p>
+        </div>
+
+        <!-- Left column: video -->
+        <div class="video-wrapper">
+          <video controls autoplay muted loop>
+            <source
+              src="https://www.shutterstock.com/shutterstock/videos/3757199579/preview/stock-footage-solar-system-model-the-sun-and-planets-with-its-characteristics-d-illustration.webm"
+              type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+
+      <!-- SECTION: IMAGE / VISUAL INSIGHT -->
+      <section class="image-insight" aria-labelledby="image-title">
+        <h2>Visualizing the Differences Between Planets</h2>
+
+        <p>
+          Each planet in our solar system has unique physical characteristics.
+          Visual comparisons help highlight how vastly<br />
+          difference terrestrial planets are from gas giants and ice giants.
+        </p>
+
+        <!-- IMAGE CONTAINER -->
+        <figure>
+          <img
+            src="https://media.istockphoto.com/id/1872638922/photo/solar-system-planets-aligned-in-orbital-paths-with-sun.webp?a=1&b=1&s=612x612&w=0&k=20&c=-UUwAmCUBVJdy_X1qwU8IpCTIu7wKr2Lq-WZ4KtPU0w="
+            alt="Illustration of the solar system showing planets and their orbits"
+            width="50%"
+            height="300px" />
+
+          <figcaption>
+            A simplified visual representation of the solar system and planetary
+            orbits.
+          </figcaption>
+        </figure>
+      </section>
+
+
+      <section class="planetary-data" aria-labelledby="data-title">
+        <h2 id="data-title">Planetary Facts at a Glance</h2>
+
+        <p>
+          Below is a comparative table of major planets in our solar system. The
+          data highlights key<br />physical properties used by astronomers and
+          researchers worldwide.
+        </p>
+
+        <table>
+          <caption>
+            Data about the planets of our solar system (Planetary facts taken
+            from Nasa)
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2"></th>
+
+              <th scope="col">Name</th>
+              <th scope="col">Mass(10 24kg)</th>
+              <th scope="col">Diameter (km)</th>
+              <th scope="col">Density (kg/m3)</th>
+              <th scope="col">Gravity(m/s2)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="4" colspan="2" scope="row">Terrestial Planets</th>
+
+              <td>Mercury</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <td>Venus</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <td>Earth</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <td>Mars</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <th rowspan="4" scope="row">Jovian Planets</th>
+              <th rowspan="2">Gas Giants</th>
+              <td>Jupiter</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <td>Saturn</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <th rowspan="2">Ice Giants</th>
+              <td>Uranus</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <td>Neptune</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+
+            <tr>
+              <th colspan="2" scope="row">Dwarf Planets</th>
+
+              <td>Pluto</td>
+              <td>0.330</td>
+              <td>4,878</td>
+              <td>5427</td>
+              <td>3.7</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="contact-title">
+        <h2>Have Questions About Planetary Science?</h2>
+
+        <p>
+          Interested in learning more about space, astronomy, or how planetary
+          data is collected and analyzed?
+          <br />
+          Reach out and we'll get back to you.
+        </p>
+
+        <form id="contact">
+          <fieldset>
+            <!-- Name -->
+            <div>
+              <label for="name"
+                >Full Name <span aria-hidden="true">*</span></label
+              >
+              <br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                minlength="10"
+                maxlength="20"
+                required
+                placeholder="Full name" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@example.com" />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label for="phone"
+                >Phone Number<span aria-hidden="true">*</span></label
+              >
+              <br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                maxlength="11"
+                placeholder="Please enter a valid phone number" />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message"
+                >Message <span aria-hidden="true">*</span>
+              </label>
+              <br />
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                cols="40"
+                maxlength="100"
+                required
+                placeholder="Enter your message"></textarea>
+              <small>100 Characters</small>
+            </div>
+
+            <div>
+              <!-- Submit -->
+              <button type="submit">Submit ></button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <!-- ABOUT SECTION -->
+        <section class="about">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Planetary Facts</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">World Records</a></li>
+            <li><a href="#">Guides</a></li>
+          </ul>
+        </section>
+
+        <p>
+          &copy; 2026 Bamidele Babalola. Design by Amaka. All rights reserved
+        </p>
+
+        <nav class="footer-links">
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Condition</a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
