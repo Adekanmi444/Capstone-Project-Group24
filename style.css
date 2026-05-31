@@ -125,6 +125,115 @@ padding is optional but i do this because of lists*/
   touch-action: manipulation;
 }
 
+/* Group 1 Nav and Header Adetunji, */
+header{
+  background-color: #051540;
+}
+
+header > img{
+  margin-left: 6em;
+}
+
+/* Hero section styling */
+.hero-section{
+  background-color: #051540 ;
+  color:white;
+}
+.hero-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.right-side{
+  width:40%;
+}
+.left-side{
+  width:59%;
+}
+.left-side > *{
+  margin-left: 6rem;
+}
+ .left-side > h1{
+  margin-bottom: 0.5rem; 
+  line-height: 121%;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.left-side > p{
+  margin-bottom: 2rem ;
+  line-height: 160%;
+  letter-spacing: -2%;
+  font-size: 1.125rem;
+  font-weight: medium;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .hero-section .left-side,
+  .hero-section .right-side {
+    width: 100%;
+  }
+
+  .left-side > * {
+    margin-left: 0;
+  }
+
+  .hero-section .right-side img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .hero-section nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* center heading and paragraph on small screens */
+  .left-side > h1,
+  .left-side > p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-section nav a {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  /* hide hard line breaks in hero text on small screens */
+  .left-side br {
+    display: none !important;
+  }
+}
+
+/* link styling */
+.facts{
+  margin-right: 2rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+nav a:hover  {
+  background-color: #164BAF;
+  color: white;
+}
+
 /* GRoup 3 styling by Biola28 , David igoche and Adekanmi*/
 #visualize {
   background: #f2f7ff;
