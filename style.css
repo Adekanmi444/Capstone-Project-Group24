@@ -125,13 +125,9 @@ padding is optional but i do this because of lists*/
   touch-action: manipulation;
 }
 
-
-
-
-
 /* GRoup 3 styling by Biola28 , David igoche and Adekanmi*/
 #visualize {
-  background: #F2F7FF;
+  background: #f2f7ff;
   padding: 80px 24px;
   display: flex;
   justify-content: center;
@@ -149,24 +145,24 @@ padding is optional but i do this because of lists*/
 #visualize h2 {
   width: min(904px, 100%);
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 150%;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #164BAF;
+  color: #164baf;
 }
 
 #visualize p {
   width: min(904px, 100%);
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  color: #0F2A44;
+  color: #0f2a44;
 }
 
 #planet-visuals {
@@ -182,7 +178,7 @@ padding is optional but i do this because of lists*/
 }
 
 #planet-visuals figure {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -211,7 +207,7 @@ padding is optional but i do this because of lists*/
 
 #planet-visuals .planet-name,
 #planet-visuals .planet-distance {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -240,4 +236,212 @@ padding is optional but i do this because of lists*/
     padding: 16px;
   }
 }
- 
+
+/* Group 5 bamidelethecreator, leezorae and gbolee002-ux */
+
+/*CONTACT FORM */
+section[aria-labelledby="contact-title"] {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* CONTACT TITLE */
+section[aria-labelledby="contact-title"] h2 {
+  color: #1e4ed8;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT DESCRIPTION */
+section[aria-labelledby="contact-title"] p {
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* FORM */
+#contact {
+  background: #fff;
+  border-radius: 5px;
+}
+
+#contact fieldset {
+  border: none;
+  display: grid;
+  padding: 10px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+/* LABELS */
+#contact label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* INPUTS */
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #1e4ed8;
+}
+
+/* Submit button wrapper */
+fieldset div:last-child {
+  grid-column: span 2;
+}
+
+/* ONLY BUTTON WRAPPER SPANS FULL WIDTH */
+#contact fieldset div:last-child {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* BUTTON */
+#contact button {
+  background: #1e4ed8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #173cb0;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-section {
+    padding: 80px 50px;
+  }
+
+  .video-wrapper {
+    width: 400px;
+    height: 420px;
+  }
+
+  .video-text {
+    width: 100%;
+  }
+}
+
+/* Phones & Small Tablets */
+@media (max-width: 768px) {
+  /* VIDEO SECTION */
+  .video-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .video-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .video-text h2 {
+    font-size: 28px;
+  }
+
+  .video-text p {
+    font-size: 16px;
+  }
+
+  /* IMAGE SECTION */
+  .image-insight img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TABLE */
+  .planetary-data table {
+    min-width: 700px;
+  }
+
+  /* FORM */
+  #contact {
+    padding: 20px;
+  }
+
+  #contact fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  #contact fieldset div {
+    grid-column: span 1 !important;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .hero nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header img {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .video-text h2 {
+    font-size: 24px;
+  }
+
+  .planetary-data {
+    padding: 20px 10px;
+  }
+
+  section[aria-labelledby="contact-title"] {
+    padding: 20px 10px;
+  }
+}
