@@ -234,6 +234,135 @@ nav a:hover  {
   color: white;
 }
 
+
+/* Group 2 - Fathia and Favour */
+/*BASE / DESKTOP STYLES*/
+
+.video-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 142px 125px;
+  gap: 40px;
+}
+
+/* Video wrapper - desktop */
+.video-wrapper {
+  width: 484.46px;
+  height: 496px;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text block - desktop */
+.video-text {
+  display: flex;
+  flex-direction: column;
+  width: 591.58px;
+  gap: 24px;
+}
+
+/* Heading - desktop */
+.video-text h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400px;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #164baf;
+}
+
+.video-text h2 span {
+  color: #1274a4;
+}
+
+/* Paragraph - desktop */
+.video-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #000000;
+}
+
+/* Span (bold keywords) - desktop */
+.video-text p span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1274a4;
+}
+
+/* MOBILE STYLES (390px)*/
+
+@media (max-width: 360px) {
+  .video-section {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px 31px;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Text block - mobile */
+  .video-text {
+    width: 303px;
+    gap: 24px;
+    order: 1;
+    text-align: center;
+  }
+
+  /* Heading - mobile */
+  .video-text h2 {
+    font-size: 28px;
+    font-weight: 500px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #164baf;
+  }
+
+  /* Paragraph - mobile */
+  .video-text p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000000;
+  }
+
+  /* Span - mobile */
+  .video-text p span {
+    font-weight: 500px;
+    font-size: 16px;
+    color: #1274a4;
+  }
+
+  /* Video wrapper - mobile */
+  .video-wrapper {
+    width: 327px;
+    height: 320px;
+    border-radius: 30px;
+    overflow: hidden;
+    order: 2;
+  }
+}
+
 /* GRoup 3 styling by Biola28 , David igoche and Adekanmi*/
 #visualize {
   background: #f2f7ff;
