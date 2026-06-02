@@ -126,42 +126,42 @@ padding is optional but i do this because of lists*/
 }
 
 /* Group 1 Nav and Header Adetunji, */
-header{
+header {
   background-color: #051540;
 }
 
-header > img{
+header > img {
   margin-left: 6em;
 }
 
 /* Hero section styling */
-.hero-section{
-  background-color: #051540 ;
-  color:white;
+.hero-section {
+  background-color: #051540;
+  color: white;
 }
-.hero-section{
+.hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
-.right-side{
-  width:40%;
+.right-side {
+  width: 40%;
 }
-.left-side{
-  width:59%;
+.left-side {
+  width: 59%;
 }
-.left-side > *{
+.left-side > * {
   margin-left: 6rem;
 }
- .left-side > h1{
-  margin-bottom: 0.5rem; 
+.left-side > h1 {
+  margin-bottom: 0.5rem;
   line-height: 121%;
   font-size: 2.5rem;
   font-weight: bold;
 }
-.left-side > p{
-  margin-bottom: 2rem ;
+.left-side > p {
+  margin-bottom: 2rem;
   line-height: 160%;
   letter-spacing: -2%;
   font-size: 1.125rem;
@@ -170,7 +170,7 @@ header > img{
 
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
@@ -219,7 +219,7 @@ header > img{
 }
 
 /* link styling */
-.facts{
+.facts {
   margin-right: 2rem;
 }
 nav a {
@@ -229,11 +229,10 @@ nav a {
   padding: 0.5em 1em;
   border-radius: 0.5em;
 }
-nav a:hover  {
-  background-color: #164BAF;
+nav a:hover {
+  background-color: #164baf;
   color: white;
 }
-
 
 /* Group 2 - Fathia and Favour */
 /*BASE / DESKTOP STYLES*/
@@ -636,6 +635,11 @@ section[aria-labelledby="contact-title"] p {
   color: #333;
 }
 
+label span[aria-hidden="true"] {
+  color: red;
+  font-weight: bold;
+}
+
 /* INPUTS */
 #contact input,
 #contact textarea {
@@ -796,5 +800,143 @@ fieldset div:last-child {
 
   section[aria-labelledby="contact-title"] {
     padding: 20px 10px;
+  }
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #051540;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+/* Shared width alignment */
+.about,
+.footer-divider,
+.footer-credit {
+  width: 92%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ABOUT */
+.about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 2rem;
+}
+
+.team-list li {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* DIVIDER */
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CREDIT AREA */
+
+.footer-credit {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-credit address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-meta p {
+  margin: 0;
+}
+
+.footer-meta a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.designer-credit a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.designer-credit a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .footer-credit {
+    gap: 0.25rem;
+  }
+
+  .footer-credit p {
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .footer-credit a {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .footer-meta p {
+    margin: 0;
+  }
+
+  .rights {
+    display: block;
+    margin-top: 0;
+  }
+
+  .footer-credit address {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-list {
+    gap: 0.5rem 1rem;
+  }
+
+  .team-list li {
+    font-size: 0.85rem;
   }
 }
