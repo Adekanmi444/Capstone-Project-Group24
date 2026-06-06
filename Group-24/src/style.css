@@ -1,0 +1,989 @@
+/* Reset CSS by Amaka Ndukwu */
+
+/* making use of :where to allow for low specificity making it easy to override */
+
+/* 1. border-box for box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. remove default margin 
+padding is optional but i do this because of lists*/
+
+:where(:not(dialog)) {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. great for in-page linking */
+@media (prefers-reduced-motion: no-preference) {
+  :where(html) {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 4. line height and text rendering improvement */
+:where(html) {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. ensure full viewport height */
+:where(html, body) {
+  min-block-size: 100%;
+}
+
+/* 6. improve line wrapping */
+:where(h1, h2, h3, h4, h5, h6) {
+  text-wrap: balance;
+}
+
+:where(p) {
+  text-wrap: pretty;
+}
+
+:where(figure) > :where(figcaption) {
+  text-wrap: balance;
+}
+
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/* 7. making media elements block-level */
+:where(img, svg, video, canvas, picture, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, svg, video, canvas, picture) {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/* 8. inherit font and letter spacing for form controls */
+:where(input, button, textarea, select),
+:where(input[type="file"])::-webkit-file-upload-button {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* 9. textarea can only resized vertically and will grow to adjust its content */
+:where(textarea) {
+  resize: vertical;
+  field-sizing: content;
+}
+
+/* 10. table */
+:where(table) {
+  width: fit-content;
+  border-collapse: collapse;
+}
+
+:where(pre) {
+  direction: ltr;
+  max-inline-size: max-content;
+  min-inline-size: 0;
+  white-space: pre;
+  writing-mode: lr;
+}
+
+:where(
+  a[href],
+  area,
+  button,
+  input:not(
+    [type="text"],
+    [type="email"],
+    [type="number"],
+    [type="password"],
+    [type=""],
+    [type="tel"],
+    [type="url"]
+  ),
+  label[for],
+  select,
+  summary,
+  [tabindex]:not([tabindex*="-"], pre)
+) {
+  cursor: pointer;
+}
+
+/*  this will disable additional non-standard gestures such as double-tap to zoom*/
+:where(
+  a[href],
+  area,
+  button,
+  input,
+  label[for],
+  select,
+  summary,
+  textarea,
+  [tabindex]:not([tabindex*="-"])
+) {
+  touch-action: manipulation;
+}
+
+/* Group 1 Nav and Header Adetunji, */
+header {
+  background-color: #051540;
+}
+
+header > img {
+  margin-left: 6em;
+}
+
+/* Hero section styling */
+.hero-section {
+  background-color: #051540;
+  color: white;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side {
+  width: 40%;
+}
+.left-side {
+  width: 59%;
+}
+.left-side > * {
+  margin-left: 6rem;
+}
+.left-side > h1 {
+  margin-bottom: 0.5rem;
+  line-height: 121%;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.left-side > p {
+  margin-bottom: 2rem;
+  line-height: 160%;
+  letter-spacing: -2%;
+  font-size: 1.125rem;
+  font-weight: medium;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .hero-section .left-side,
+  .hero-section .right-side {
+    width: 100%;
+  }
+
+  .left-side > * {
+    margin-left: 0;
+  }
+
+  .hero-section .right-side img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .hero-section nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* center heading and paragraph on small screens */
+  .left-side > h1,
+  .left-side > p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-section nav a {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  /* hide hard line breaks in hero text on small screens */
+  .left-side br {
+    display: none !important;
+  }
+}
+
+/* link styling */
+.facts {
+  margin-right: 2rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+nav a:hover {
+  background-color: #164baf;
+  color: white;
+}
+
+/* Group 2 - Fathia and Favour */
+/*BASE / DESKTOP STYLES*/
+
+.video-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 142px 125px;
+  gap: 40px;
+}
+
+/* Video wrapper - desktop */
+.video-wrapper {
+  width: 484.46px;
+  height: 496px;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text block - desktop */
+.video-text {
+  display: flex;
+  flex-direction: column;
+  width: 591.58px;
+  gap: 24px;
+}
+
+/* Heading - desktop */
+.video-text h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400px;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #164baf;
+}
+
+.video-text h2 span {
+  color: #1274a4;
+}
+
+/* Paragraph - desktop */
+.video-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #000000;
+}
+
+/* Span (bold keywords) - desktop */
+.video-text p span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1274a4;
+}
+
+/* MOBILE STYLES (390px)*/
+
+@media (max-width: 360px) {
+  .video-section {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px 31px;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Text block - mobile */
+  .video-text {
+    width: 303px;
+    gap: 24px;
+    order: 1;
+    text-align: center;
+  }
+
+  /* Heading - mobile */
+  .video-text h2 {
+    font-size: 28px;
+    font-weight: 500px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #164baf;
+  }
+
+  /* Paragraph - mobile */
+  .video-text p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000000;
+  }
+
+  /* Span - mobile */
+  .video-text p span {
+    font-weight: 500px;
+    font-size: 16px;
+    color: #1274a4;
+  }
+
+  /* Video wrapper - mobile */
+  .video-wrapper {
+    width: 327px;
+    height: 320px;
+    border-radius: 30px;
+    overflow: hidden;
+    order: 2;
+  }
+}
+
+/* GRoup 3 styling by Biola28 , David igoche and Adekanmi*/
+#visualize {
+  background: #f2f7ff;
+  padding: 80px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.visualize-inner {
+  width: min(1200px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+}
+
+#visualize h2 {
+  width: min(904px, 100%);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #164baf;
+}
+
+#visualize p {
+  width: min(904px, 100%);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #0f2a44;
+}
+
+#planet-visuals {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1060px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding: 24px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+#planet-visuals figure {
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 340px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+  margin: 0;
+}
+
+#planet-visuals img {
+  width: 100%;
+  height: 252px;
+  object-fit: cover;
+  display: block;
+}
+
+#planet-visuals .card-content {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#planet-visuals .planet-name,
+#planet-visuals .planet-distance {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+#planet-visuals .planet-distance {
+  opacity: 0.8;
+}
+
+@media (max-width: 1100px) {
+  #planet-visuals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  #visualize {
+    padding: 48px 16px;
+  }
+
+  #planet-visuals {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
+
+/* Group 4 Dev-Shades and Divine-Dev351 */
+
+/* (Fixed Alignment) */
+.planetary-data {
+  padding: 60px 20px;
+  background: white;
+  max-width: 1200px;          
+  margin: 0 auto;               
+  text-align: left;
+}
+
+
+.planetary-data > h2,
+.planetary-data > p {
+  max-width: none;            
+  margin-left: 0;    
+  margin-right: auto;
+  text-align: left;
+  width: 100%;                 
+}
+
+
+.planetary-data table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;           /* Centers the table */
+  border-collapse: collapse;
+}
+
+.planetary-data th,
+.planetary-data td {
+  text-align: center;
+  padding: 12px;
+}
+
+
+.planetary-data h2 {
+  color: #1a3a6b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.planetary-data p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+#data-title {
+  color: #1a3a6b;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+caption {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  caption-side: top;
+  padding: 0 0 8px 0;
+  display: table-caption;
+}
+
+thead tr th {
+  background-color: #1a3a6b;
+  color: #ffffff;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+}
+
+tbody th {
+  background-color: #d6e4f7;
+  color: #252525;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  vertical-align: middle;
+}
+
+/* DATA CELLS */
+tbody td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1.5px solid #ffffff;
+  color: #333;
+  background-color: #f5f9ff;
+  font-family: "Arial", sans-serif;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #f5f9ff;
+}
+
+/* RESPONSIVE TABLE TEXT */
+
+@media (max-width: 768px) {
+  .planetary-data {
+    display: none;
+  }
+}
+/* Desktop */
+.planetary-data table {
+  font-size: 1rem;
+}
+
+.planetary-data th,
+.planetary-data td {
+  padding: 12px;
+  text-align: center;
+}
+
+thead th,
+tbody th,
+tbody td {
+  word-break: break-word;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .planetary-data th,
+  .planetary-data td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #data-title {
+    font-size: 1.3rem;
+  }
+
+  .planetary-data caption {
+    font-size: 0.85rem;
+  }
+}
+
+thead tr th:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+thead tr th:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+tbody tr:last-child th:first-child,
+tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 12px;
+}
+
+tbody tr:last-child td:last-child {
+  border-radius: 0 0 12px 0;
+}
+
+/* Group 5 bamidelethecreator, leezorae and gbolee002-ux */
+
+/*CONTACT FORM */
+section[aria-labelledby="contact-title"] {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* CONTACT TITLE */
+section[aria-labelledby="contact-title"] h2 {
+  color: #1e4ed8;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT DESCRIPTION */
+section[aria-labelledby="contact-title"] p {
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* FORM */
+#contact {
+  background: #fff;
+  border-radius: 5px;
+}
+
+#contact fieldset {
+  border: none;
+  display: grid;
+  padding: 10px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+/* LABELS */
+#contact label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+label span[aria-hidden="true"] {
+  color: red;
+  font-weight: bold;
+}
+
+/* INPUTS */
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #1e4ed8;
+}
+
+/* Submit button wrapper */
+fieldset div:last-child {
+  grid-column: span 2;
+}
+
+/* ONLY BUTTON WRAPPER SPANS FULL WIDTH */
+#contact fieldset div:last-child {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* BUTTON */
+#contact button {
+  background: #1e4ed8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #173cb0;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-section {
+    padding: 80px 50px;
+  }
+
+  .video-wrapper {
+    width: 400px;
+    height: 420px;
+  }
+
+  .video-text {
+    width: 100%;
+  }
+}
+
+/* Phones & Small Tablets */
+@media (max-width: 768px) {
+  /* VIDEO SECTION */
+  .video-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .video-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .video-text h2 {
+    font-size: 28px;
+  }
+
+  .video-text p {
+    font-size: 16px;
+  }
+
+  /* IMAGE SECTION */
+  .image-insight img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TABLE */
+  .planetary-data table {
+    min-width: 700px;
+  }
+
+  /* FORM */
+  #contact {
+    padding: 20px;
+  }
+
+  #contact fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  #contact fieldset div {
+    grid-column: span 1 !important;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .hero nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header img {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .video-text h2 {
+    font-size: 24px;
+  }
+
+  .planetary-data {
+    padding: 20px 10px;
+  }
+
+  section[aria-labelledby="contact-title"] {
+    padding: 20px 10px;
+  }
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #051540;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+/* Shared width alignment */
+.about,
+.footer-divider,
+.footer-credit {
+  width: 92%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ABOUT */
+.about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 2rem;
+}
+
+.team-list li {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* DIVIDER */
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CREDIT AREA */
+
+.footer-credit {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-credit address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-meta p {
+  margin: 0;
+}
+
+.footer-meta a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.designer-credit a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.designer-credit a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .footer-credit {
+    gap: 0.25rem;
+  }
+
+  .footer-credit p {
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .footer-credit a {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .footer-meta p {
+    margin: 0;
+  }
+
+  .rights {
+    display: block;
+    margin-top: 0;
+  }
+
+  .footer-credit address {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-list {
+    gap: 0.5rem 1rem;
+  }
+
+  .team-list li {
+    font-size: 0.85rem;
+  }
+}

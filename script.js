@@ -30,3 +30,32 @@ fetch("https://anurella.github.io/json/planets.json")
     });
   })
   .catch(error => console.error("Error fetching planets:", error));
+
+
+  // FORM SUBMISSION
+const form = document.getElementById("contact");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // stop default reload
+
+  const formData = new FormData(form);
+
+  fetch("https://whitebricks.com/tsacademy.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then(data => {
+      alert("✅ Form submitted successfully!");
+      form.reset();
+    })
+    .catch(error => {
+      console.error("Error submitting form:", error);
+      alert("❌ There was a problem submitting your form. Please try again.");
+    });
+});
