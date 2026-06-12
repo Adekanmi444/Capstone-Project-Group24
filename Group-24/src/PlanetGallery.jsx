@@ -13,7 +13,7 @@ function PlanetGallery() {
   return (
     <section id="visualize">
       <div className="visualize-inner">
-        <h2>Visualizing the differences Between Planets</h2>
+        <h2>Visualizing the Differences Between Planets</h2>
         <p>
           Each planet in our solar system has unique physical characteristics.
           Visual comparisons help highlight how vastly <br />

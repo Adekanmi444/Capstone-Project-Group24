@@ -17,6 +17,7 @@ function Footer() {
           <li>David</li>
           <li>Divine</li>
           <li>Favour</li>
+          <li>Divine</li>
           <li>Shalom</li>
         </ul>
       </section>
