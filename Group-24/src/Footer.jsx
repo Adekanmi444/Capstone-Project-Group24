@@ -31,11 +31,12 @@ function Footer() {
           <a href="https://www.linkedin.com/in/ifeomaokocha">Ifeoma A.</a>
         </p>
 
-        <div className="footer-meta">
-          <p>
-            <span className="built-by">Built by Group 24.</span>{" "}
-            <span className="rights">All rights reserved</span>
-          </p>
+       <div class="footer-meta">
+            <p>
+             
+              <a href="https://github.com/Adekanmi444/Capstone-Project-Group24.git" target="_blank">Built by Group 24.</a>
+              <span class="rights">All rights reserved</span>
+            </p>
 
           <a href="https://tsacademyonline.com/">TSAcademy</a>
         </div>
