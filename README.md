@@ -135,22 +135,22 @@ Capstone-Project-Group24/
 
 ## Team Members
 
-| Name           | GitHub Username                       |
-| -------------- | --------------------------------|
-| Adekanmi       | https://github.com/Adekanmi444|
-| Gbolahan       | https://github.com/gbolee002-ux|
-| Bamidele       | https://github.com/bamidelethecreator|
-| Elizabeth      | https://github.com/Leezorae|
-| Adetunji       | https://github.com/Tunapa01|
-| Fathia         | https://github.com/FTemidayo|
-| Biola          | https://github.com/Biola28|
-| Divine (D-Bop) | https://github.com/D-Bop|
-| Oluwajomiloju  | https://github.com/jommie-pooh|
-| Ahmed          | https://github.com/flexxxy-hub|
-| David          | https://github.com/davidigoche5-design|
-| Divine         | https://github.com/Divine-dev351|
-| Favour         | https://github.com/Favyabam|
-| Shalom         | https://github.com/Dev-Shades|
+| Name                  | GitHub Username                       |
+| ----------------------| --------------------------------|
+| Adekanmi [Teamlead]        | https://github.com/Adekanmi444|
+| Gbolahan                   | https://github.com/gbolee002-ux|
+| Bamidele [Deputy Teamlead] | https://github.com/bamidelethecreator|
+| Elizabeth                  | https://github.com/Leezorae|
+| Adetunji                   | https://github.com/Tunapa01|
+| Fathia                     | https://github.com/FTemidayo|
+| Biola                      | https://github.com/Biola28|
+| Divine (D-Bop)             | https://github.com/D-Bop|
+| Oluwajomiloju              | https://github.com/jommie-pooh|
+| Ahmed                      | https://github.com/flexxxy-hub|
+| David                      | https://github.com/davidigoche5-design|
+| Divine                     | https://github.com/Divine-dev351|
+| Favour                     | https://github.com/Favyabam|
+| Shalom                     | https://github.com/Dev-Shades|
 
 ---
 
