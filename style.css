@@ -8,6 +8,13 @@
 *::after {
   box-sizing: border-box;
 }
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+body {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
 
 /* 2. remove default margin 
 padding is optional but i do this because of lists*/
@@ -132,43 +139,100 @@ header {
 
 header > img {
   margin-left: 6em;
+  padding: 2em 0;
 }
 
 /* Hero section styling */
 .hero-section {
   background-color: #051540;
+  /* background-color: tan; */
   color: white;
-}
-.hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: inter;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right-side {
-  width: 40%;
+  /* width: 40%; */
 }
 .left-side {
-  width: 59%;
+  /* width: 59%; */
+  margin-top: 1em;
+  /* background-color: green; */
 }
 .left-side > * {
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
 }
 .left-side > h1 {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem;
   line-height: 121%;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: bold; */
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  line-height: 1.3;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: bold;
+  width: 549px;
 }
 .left-side > p {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem;
   line-height: 160%;
   letter-spacing: -2%;
   font-size: 1.125rem;
-  font-weight: medium;
+  font-weight: medium; */
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: small;
+  font-size: 18px;
+  color: #DDDDDD;
+  width: 534px;
+  margin-top: 1em;
+}
+
+.right-side > img {
+  margin-top: -80px;
+}
+
+nav {
+  display: flex;
+  margin-top: 2em;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+nav .facts {
+  background-color: #1a56db;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+nav .contact {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 768px) {
+
+  header > img {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero-section {
     flex-direction: column-reverse;
     align-items: center;
@@ -203,8 +267,22 @@ header > img {
   .left-side > h1,
   .left-side > p {
     text-align: center;
-    margin-left: 0;
-    margin-right: 0;
+  }
+
+  .left-side > h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0.3em;
+  }
+
+  .left-side > p {
+    font-size: 18px;
+    width: 73%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5em;
   }
 
   .hero-section nav a {
@@ -243,7 +321,7 @@ nav a:hover {
   align-items: center;
   background-color: #ffffff;
   padding: 142px 125px;
-  gap: 40px;
+  gap: 60px;
 }
 
 /* Video wrapper - desktop */
@@ -273,12 +351,12 @@ nav a:hover {
 /* Heading - desktop */
 .video-text h2 {
   font-family: "Inter", sans-serif;
-  font-weight: 400px;
+  font-weight: 600;
+  font-style: bold;
   font-size: 32px;
-  line-height: 150%;
-  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #164BAF;
   text-align: center;
-  color: #164baf;
 }
 
 .video-text h2 span {
@@ -288,12 +366,17 @@ nav a:hover {
 /* Paragraph - desktop */
 .video-text p {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 1px;
   text-align: justify;
-  color: #000000;
+  color: #000000; */
+  /* color: #a0aec0; */
+  color: #0F2A44;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
 }
 
 /* Span (bold keywords) - desktop */
@@ -311,8 +394,8 @@ nav a:hover {
   .video-section {
     flex-direction: column;
     background-color: #ffffff;
-    padding: 40px 31px;
-    gap: 24px;
+    padding: 40px 20px;
+    gap: 32px;
     align-items: center;
     text-align: center;
   }
@@ -327,7 +410,7 @@ nav a:hover {
 
   /* Heading - mobile */
   .video-text h2 {
-    font-size: 28px;
+    font-size: 1.4rem;
     font-weight: 500px;
     line-height: 150%;
     letter-spacing: 0.5px;

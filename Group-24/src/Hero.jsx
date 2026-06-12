@@ -16,7 +16,7 @@ function Hero() {
       </div>
       <div className="right-side">
         <img
-          src="./World.svg"
+          src="./HERO IMAGE.png"
           alt="image of the solar system"
           width="445"
           height="443"
