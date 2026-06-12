@@ -158,10 +158,10 @@ Capstone-Project-Group24/
 
 | Component| Description| Contributors |
 | --------------- | ---------------| -------------------|
-| Header| Logo and navigation bar| Adetunji (@Tunapa01), Oluwajomiloju (@jommie-pooh)|
-| Hero| Hero section with title, description, and call-to-action buttons| Adetunji (@Tunapa01), Oluwajomiloju (@jommie-pooh)|
-| VideoSection| Autoplay video section with descriptive content| Fathia (@FTemidayo), Favour (@Favyabam)|
-| Planets| Planet cards displaying data fetched from an external API| Biola (@Biola28), David (@davidigoche5), Adekanmi (@Adekanmi444)|
+| Header| Logo and navigation bar| Adetunji (@Tunapa01), Oluwajomiloju (@jommie-pooh), Divine (@D-Bop)|
+| Hero| Hero section with title, description, and call-to-action buttons| Adetunji (@Tunapa01), Oluwajomiloju (@jommie-pooh), Divine (@D-Bop)|
+| VideoSection| Autoplay video section with descriptive content| Fathia (@FTemidayo), Favour (@Favyabam), (@flexxxy-hub)|
+| Planets| Planet cards displaying data fetched from an external API| Biola (@Biola28), David (@davidigoche5-design), Adekanmi (@Adekanmi444)|
 | PlanetaryTable| Comparative planetary data table using NASA data| Divine (@Divine-dev351), Shalom (@Dev-Shades)|
 | ContactForm| Contact form with validation and submission functionality| Bamidele (@bamidelethecreator), Elizabeth (@Leezorae), Gbolahan (@gbolee002-ux)|
 | Footer| Footer containing team information and useful links| Bamidele (@bamidelethecreator), Elizabeth (@Leezorae), Gbolahan (@gbolee002-ux)|
