@@ -83,33 +83,35 @@ The project focuses on:
 
 Capstone-Project-Group24/
 │
-├── public/
-│   ├── World.svg
-│   └── graphics.svg
-│
-├── src/
-│   ├── assets/
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
+├── Group24
 │   │
-│   ├── App.jsx
-│   ├── ContactForm.jsx
-│   ├── Footer.jsx
-│   ├── Header.jsx
-│   ├── Hero.jsx
-│   ├── PlanetGallery.jsx
-│   ├── PlanetaryData.jsx
-│   ├── VideoSection.jsx
-│   ├── main.jsx
-│   └── style.css
-│
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── vite.config.js
+│   ├── public/
+│   │   ├── World.svg
+│   │   └── graphics.svg
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── PlanetGallery.jsx
+│   │   ├── PlanetaryData.jsx
+│   │   ├── VideoSection.jsx
+│   │   ├── main.jsx
+│   │   └── style.css
+│   │
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── asset/
 ├── index.html
@@ -144,8 +146,8 @@ Capstone-Project-Group24/
 | Biola          | https://github.com/Biola28|
 | Divine (D-Bop) | https://github.com/D-Bop|
 | Oluwajomiloju  | https://github.com/jommie-pooh|
-| Ahmed          | GitHub Username Pending|
-| David          | https://github.com/davidigoche5|
+| Ahmed          | https://github.com/flexxxy-hub|
+| David          | https://github.com/davidigoche5-design|
 | Divine         | https://github.com/Divine-dev351|
 | Favour         | https://github.com/Favyabam|
 | Shalom         | https://github.com/Dev-Shades|
@@ -185,7 +187,6 @@ Capstone-Project-Group24/
 
 ### Design Decisions
 
-* Mobile-first development approach.
 * Consistent typography and color scheme.
 * Responsive layouts using Flexbox and CSS Grid.
 
@@ -206,7 +207,7 @@ Capstone-Project-Group24/
 
 ## Testing Checklist
 
-Before submitting work, ensure:
+Before submitting work, we ensured:
 
 * HTML is valid
 * CSS is properly organized
@@ -223,6 +224,7 @@ Before submitting work, ensure:
 | Phase       | Status      |
 | ----------- | ----------- |
 | Planning    | ✅ Completed |
+| Designing   | ✅ Completed |
 | Development | ✅ Completed |
 | Testing     | ✅ Completed |
 | Deployment  | ✅ Completed |
